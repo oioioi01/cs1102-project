@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>CS1102 Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav-bar">
+  <div class="logo">CS1102 Project</div>
+  <nav class="menu-group">
+    <a href="index.html" class="nav-item">Home</a>
+
+    <div class="nav-item">
+      Discovery
+      <div class="dropdown-list">
+        <a href="ethical.html">Ethical Problems</a>
+        <a href="trend.html">Future Trends</a>
+      </div>
+    </div> 
+
+    <div class="nav-item">
+      Structure & Mechanisms
+      <div class="dropdown-list">
+        <a href="mechanism1.html">Collaborative Filtering</a>
+        <a href="mechanism2.html">Content-Based Filtering</a>
+        <a href="llm.html">What's new?</a>
+      </div>
+      </div>
+      <a href="letstry.html" class="nav-item">Let's Try</a>
+  </nav>
+</header>
+
+
+<section class="content-mechanisms"> 
+    <article>
+      <h2>What is Collaborative Filtering?</h2>
+      <p>
+        One of the basic and most ubiquitous methods of large-scale recommender systems is Collaborative Filtering. Its fundamental logic is that of the wisdom of the crowd: based on the assumption that users who have agreed before will agree again in future.
+      </p>
+      <p>
+        There are two main types of CF, namely, user-based and item-based. User-based CF suggests items based on the identification of similar users (neighbors) and recommending items that similar users have liked. To illustrate, when User A and User B share similar movie rating history, a movie that User B rated high but User A has not watched is a recommendation to User A. Item-based CF, which Amazon uses, determines the items that are commonly interacted with. For example, when one purchases a specific smartphone, the system suggests buying a case since history indicates that individuals who purchase that smartphone tend to purchase that case as well.
+      </p>
+      <p>
+        The first advantage of CF is that it does not need any content analysis of the items themselves, but only learns interaction data. This enables it to suggest intricate products such as movies or music using just taste trends.
+      </p>
+      <p>
+        CF is however unlucky in a number of ways. The cold-start problem is the most significant, since the system cannot give good recommendations to new users with no history or a new item with no interactions. It also has the risk of the so-called <strong>popularity bias</strong>, which implies that popular things get suggested more often, leading to a self-fulfilling cycle of neglect of niche or long-tail items that may be of great value to a particular user. Another problem may be scalability, where computing similarities across millions of users demands considerable computing resources, but methods such as matrix factorization and approximate nearest neighbor search have been created to alleviate it. (Collaborative Filtering for Recommender Systems, 2014)
+      </p>
+    </article>
+  </section>
+</body>
+</html>

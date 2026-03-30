@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Under Content-based Filter</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 30px;
+            background-color: #f0f0f0;
+        }
+        .main-card {
+            background: white;
+            padding: 20px;
+            border: 2px solid #333;
+            width: 500px;
+        }
+        input {
+            padding: 8px;
+            width: 250px;
+        }
+        button {
+            padding: 8px;
+            cursor: pointer;
+        }
+        #result-area {
+            margin-top: 20px;
+            padding: 10px;
+            border-top: 1px solid #ccc;
+            display: none; /* Hidden until something is typed */
+        }
+        .recommendation-item {
+            color: blue;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-card">
+        <h3>Input a Genre or Song:</h3>
+        <p style="font-size: 0.8em; color: #666;">Try: Rock, Pop, Jazz, or Toxic</p>
+        
+        <input type="text" id="userInput" placeholder="Type here...">
+        <button onclick="getRecommendation()">Find Music</button>
+
+        <div id="result-area">
+            <h4>Recommended for you:</h4>
+            <div id="output"></div>
+        </div>
+    </div>
+
+    <script>
+        const songData = [
+            { title: "Bohemian Rhapsody", genre: "Rock" },
+            { title: "Hotel California", genre: "Rock" },
+            { title: "Billie Jean", genre: "Pop" },
+            { title: "Take Five", genre: "Jazz" },
+            { title: "So What", genre: "Jazz" }
+        ];
+
+        function getRecommendation() {
+            const input = document.getElementById("userInput").value.toLowerCase();
+            const outputDiv = document.getElementById("output");
+            const resultArea = document.getElementById("result-area");
+            
+            // Clear previous results
+            outputDiv.innerHTML = "";
+            let found = false;
+
+            // Logic: Loop through data and find matches
+            for (let i = 0; i < songData.length; i++) {
+                // If the input matches the genre OR the song title
+                if (songData[i].genre.toLowerCase() === input || 
+                    songData[i].title.toLowerCase().includes(input)) {
+                    
+                    const p = document.createElement("p");
+                    p.className = "recommendation-item";
+                    p.innerText = "-> " + songData[i].title + " (" + songData[i].genre + ")";
+                    outputDiv.appendChild(p);
+                    found = true;
+                }
+            }
+
+            if (found) {
+                resultArea.style.display = "block";
+            } else {
+                alert("No match found! Try 'Rock' or 'Jazz'.");
+                resultArea.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>

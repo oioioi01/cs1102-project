@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>CS1102 Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav-bar">
+  <div class="logo">CS1102 Project</div>
+  <nav class="menu-group">
+    <a href="index.html" class="nav-item">Home</a>
+
+    <div class="nav-item">
+      Discovery
+      <div class="dropdown-list">
+        <a href="ethical.html">Ethical Problems</a>
+        <a href="trend.html">Future Trends</a>
+      </div>
+    </div> 
+
+    <div class="nav-item">
+      Structure & Mechanisms
+      <div class="dropdown-list">
+        <a href="mechanism1.html">Collaborative Filtering</a>
+        <a href="mechanism2.html">Content-Based Filtering</a>
+        <a href="llm.html">What's new?</a>
+      </div>
+      </div>
+      <a href="letstry.html" class="nav-item">Let's Try</a>
+    
+  </nav>
+</header>
+
+<section class="content-mechanisms"> 
+    <article>
+      <h2>What is Content-based Filtering?</h2>
+      <p>
+        Unlike collaborative filtering, content-based filtering uses the properties or characteristics of the items themselves. The process is to form a user profile, which is dependent on the properties of things that a user has previously interacted with, and to suggest new items, which are similar to that profile. An example: in a news recommender system a user that regularly reads articles dealing with "artificial intelligence" and "finance" will be suggested new articles that also fall within those categories. This method typically takes place in two steps: feature extraction, in which objects are represented as a structured form (such as TF-IDF vectors in case of text, or genre and actor tags in case of movies), and profile learning, where a machine learning model (such as a classifier), is trained on the user’s preferences given these features. (Liao et al., 2022) 
+      </p>
+      <p>
+       One major benefit of content-based systems is that it can solve the cold-start problem of new items since they can be recommended provided their properties are known, even in the absence of any user interaction data. Moreover, the recommendations can be explained by themselves, one can say that the system suggested this movie to you because you liked the movies shot by the same director. This openness creates trust on the part of the user. There are however significant limitations to the technique. It is also over-specialized, in that it is likely to only suggest things that are closely related to what a user has previously liked, it does not offer the serendipity of exposing users to an entirely new genre or interest. Availability of item features and their quality is also crucial in determining the quality of recommendations. Producing meaningful and detailed metadata on millions of objects may be an epic task and manually derived features may be biased or incomplete.
+      </p>
+    </article>
+  </section>
+
+</body>
+</html>
+
+</body>
+</html>
