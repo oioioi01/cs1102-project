@@ -27,12 +27,18 @@
         <a href="mechanism2.html">Content-Based Filtering</a>
         <a href="llm.html">What's new?</a>
       </div>
+</div>
+      <div class = "nav-item">
+        Techniques
+        <div class="dropdown-list">
+          <a href = "Approach.html">Tranditional Approaches</a href>
+         <a href = "twostage.html">The Modern Two-Stage Pipeline</a href>
+           <a href = "llmpower.html">LLM-Powered Innovation llm.html</a href>
+           </div>
       </div>
       <a href="letstry.html" class="nav-item">Let's Try</a>
-      
   </nav>
 </header>
-
 
 
     <section class="content-mechanisms"> 
@@ -47,16 +53,6 @@
       <p>
     Lastly, LLMs are able to produce human-like explanations of a recommendation, which will go a long way in improving transparency and user trust. LLMs are still in their infancy in the largest-scale production setting, with the inference cost and latency, but it represents the future of the recommendation systems, as they are likely to become easier to interact with, describe, and show their alignment with the complex human language and intent. (Munson et al., 2025)
       </p>
-        <h3>Tradtional Approaches</h3>
-        <p>
-        The large-scale recommender system has hit a bottleneck with the knowledge 'cutoff'. Static pre-trained Large Language Model (LLM) that contains large amounts of general knowledge but does not have access to real-time proprietary business data such as fluctuating inventory, flash sales or instant user trend changes. Therefore, the industry is starting to shift to 'Retrieval-Augmented Generation (RAG)', which separates the 'reasoning' of LLMs from the 'memory' stored in a vector database (Gao et al. 2024).
-        </p>
-        <p>
-        More specifically, it is built around transforming unstructured metadata of items into a high dimensional dense vector space through the use of an embedding model. The embedding vectors are then indexed in a specialized vector database (Pinecone or Milvus) which can then leverage Approximate Nearest Neighbor (ANN) search algorithms to return relevant context in less than a second. When a user interacts with the platform, there is no use of the internal parameters of the LLM; rather, there is a semantic retrieval of the latest factual item data. The context that has been retrieved is appended to the LLM's prompt as a grounded recommendation, meaning that the recommendation takes into account constraints from the real world when generating recommendations.
-        </p>
-        <p>
-        This discovery has enormous implications for businesses. It removes AI hallucinations by no longer providing solutions for stock total and non-existing products, upholding brand equity for businesses. It provides an extremely effective cost-saving solution for businesses by eliminating the ongoing costs of re-training or fine-tuning the AI model to include new products into the inventory (Munson et al., 2025). Rather, all that requires is “upserting” new data into the Vector DB. Lastly, it provides a high degree of trust by providing real-time consumer assistance through transparency. Using real-time data points (e.g., "This item is currently 20% off and is consistent with your recent preference for sustainable materials") allows for a transition from being a "black box" to a trusted, honest online personal assistant (Shyam et al., 2025).
-        </p>
     </article>
   </section>
 

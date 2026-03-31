@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>CS1102 Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav-bar">
+  <div class="logo">CS1102 Project</div>
+  <nav class="menu-group">
+    <a href="index.html" class="nav-item">Home</a>
+
+    <div class="nav-item">
+      Discovery
+      <div class="dropdown-list">
+        <a href="ethical.html">Ethical Problems</a>
+        <a href="trend.html">Future Trends</a>
+      </div>
+    </div> 
+
+    <div class="nav-item">
+      Structure & Mechanisms
+      <div class="dropdown-list">
+        <a href="mechanism1.html">Collaborative Filtering</a>
+        <a href="mechanism2.html">Content-Based Filtering</a>
+        <a href="llm.html">What's new?</a>
+      </div>
+</div>
+      <div class = "nav-item">
+        Techniques
+        <div class="dropdown-list">
+          <a href = "Approach.html">Tranditional Approaches</a href>
+         <a href = "twostage.html">The Modern Two-Stage Pipeline</a href>
+           <a href = "llmpower.html">LLM-Powered Innovation llm</a href>
+           </div>
+      </div>
+      <a href="letstry.html" class="nav-item">Let's Try</a>
+  </nav>
+</header>
+
+
+<section class="content-mechanisms"> 
+    <article>
+      <h2>Optimizing Business Conversion via Two-Stage Re-ranking with LLMs</h2>
+      <p>
+        The recommendation systems that could be applied in large-scale industrial applications (which can include millions of users and billions of items) have too much data for it to be computationally feasible to use large models directly. To deal with this problem, modern recommendation systems use a 2-phase architecture (Wang et al., 2023): retrieval and re-ranking. In the retrieval phase, the goal is retrieving a handful of items from thousands or even millions by using lightweight algorithms to limit the number of candidates to a couple of hundred. In the re-ranking phase, the goal is to use Large Language Models (LLM) to maximize predictive accuracy.
+    </p>
+      <p>
+        By taking a look at how they work technically, LLMs can be thought of as having an advanced form of reasoning with regards to re-ranking items. Prior to LLMs, various ranking systems were predominantly built on the use of numerical data and algorithms (such as Wide & Deep or Gradient Boosting Decision Trees) that were only capable of processing input types that contained numerical data for ranking. In contrast, LLMs have the ability to process very complex sequences of user activity and also process feedback presented as natural language. In the context of using either fine-tuning or in-context learning, LLM Re-rankers are able to rank candidates overall against a single user, by taking into consideration ALL the historical activity created by users and how it would relate to the user's current context. According to Hou, et al. (2024), LLMs can function as zero-shot rankers, generating an ordered sequence of items providing a descriptive prompt to them with high levels of predictive relevance and without needing a lot of training records for any particular problem/task.
+      </p>
+      <p>
+        One of the key advantages of LLM-based re-ranking from a business perspective is the ability to discern current user intent. User preference can change within a single session as an example, a person may have been looking for work clothes and then suddenly starts searching for travel clothes. LLMs provide a means to detect these subtle shifts in user intent through analyzing the semantic differences of recent search queries and clickthroughs. These highly personalized presentations of items result in a large increase of Click Through Rate (CTR) and Conversion Rate (CVR). When businesses are able to provide the user with items in the "top-K" rank list that are not only relevant but also provide contextual timing for presentation; this can increase user satisfaction and aid in user loyalty and ultimately maximize long-term profitability (Luo et al., 2024).
+
+      </p>
+      <p>
+
+    </p>
+    </article>
+  </section>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>CS1102 Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav-bar">
+  <div class="logo">CS1102 Project</div>
+  <nav class="menu-group">
+    <a href="index.html" class="nav-item">Home</a>
+
+    <div class="nav-item">
+      Discovery
+      <div class="dropdown-list">
+        <a href="ethical.html">Ethical Problems</a>
+        <a href="trend.html">Future Trends</a>
+      </div>
+    </div> 
+
+    <div class="nav-item">
+      Structure & Mechanisms
+      <div class="dropdown-list">
+        <a href="mechanism1.html">Collaborative Filtering</a>
+        <a href="mechanism2.html">Content-Based Filtering</a>
+        <a href="llm.html">What's new?</a>
+      </div>
+</div>
+      <div class = "nav-item">
+        Techniques
+        <div class="dropdown-list">
+          <a href = "Approach.html">Tranditional Approaches</a href>
+         <a href = "twostage.html">The Modern Two-Stage Pipeline</a href>
+           <a href = "llmpower.html">LLM-Powered Innovation llm</a href>
+           </div>
+      </div>
+      <a href="letstry.html" class="nav-item">Let's Try</a>
+  </nav>
+</header>
+
+
+<section class="content-mechanisms"> 
+    <article>
+      <h2>The Integration of LLMs as Semantic Feature Encoders</h2>
+      <p>
+        The integration of LLMs (Large Language Models) as semantic feature encoders enables organizations to enhance large-scale recommender systems. Traditional recommender systems predominantly use collaborative filtering (CF) techniques that rely on historical user-item interaction matrices for creating predictions about future preferences. As a result, many organizations that leverage these types of interaction-based models are beginning to realize their limitations, especially when it comes to the "cold start problem" (i.e., the lack of user-item interaction for new products). As advances in Natural Language Processing (NLP) have occurred, LLMs have begun to emerge as an alternative solution for addressing this problem and can act as semantic feature encoders by producing contextual embeddings for either structured or unstructured data.
+      </p>
+      <p>
+        In contrast to many traditional keyword-based methodologies (e.g., TF-IDF) that merely count the occurrence of words, LLMs take advantage of the Transformer architecture (Vaswani et al., 2017) and its self-attention model; therefore, LLMs can encode more subtle distinctions in the linguistic context and create high-dimensional representations of contextual embeddings (i.e., latent vector space) from unstructured data sources, such as product descriptions, metadata, and user-generated text reviews. Within this latent vector space, products will be represented as (x,y,z) type numeric coordinates and spatial distance between products will represent how conceptually similar the products are to one another, instead of simply the number of words that the products share.
+      </p>
+      <p>
+        The primary business benefit associated with using LLMs as encoders is the significant improvement in alleviating the issue posed by item cold start problems. Products that are new to the market do not include sufficient quantities of user-item interactions (clicks or purchases) necessary for CF-based algorithms to make accurate predictions. However, LLMs can provide encoded representations of the textual properties associated with new products.
+      </p>
+      <p>
+        With this capability businesses can quickly deliver relevant suggestions for new product/hardware in real time, greatly reducing the amount of time between customers discovering new products through an e-commerce or digital content platform (termed 'discovery lag'). Additionally, the use of LLM-generated embedding provides a common representation of different categories, helping make it possible to do more thorough cross-category discovery. Fan et al. (2024) agree that incorporating these semantic representations within large system's retrieval phase allows the recommendation engine to be both scalable and provide contextual accuracy while achieving a balance of delivery of immediate information and the long-term satisfaction of users.
+    </p>
+    </article>
+  </section>
+</body>
+</html>
