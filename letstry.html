@@ -17,6 +17,7 @@
       <div class="dropdown-list">
         <a href="ethical.html">Ethical Problems</a>
         <a href="trend.html">Future Trends</a>
+        <a href="insights.html">Our insights</a>
       </div>
     </div> 
 
@@ -37,6 +38,8 @@
            </div>
       </div>
       <a href="letstry.html" class="nav-item">Let's Try</a>
+            <a href="https://github.com/oioioi01/cs1102-project" class="nav-item">Github</a>
+
   </nav>
 </header>
 
@@ -70,13 +73,13 @@
             const outputDiv = document.getElementById("output");
             const resultArea = document.getElementById("result-area");
             
-        
+            // Clear previous results
             outputDiv.innerHTML = "";
             let found = false;
 
-            
+            // Logic: Loop through data and find matches
             for (let i = 0; i < songData.length; i++) {
-               
+                // If the input matches the genre OR the song title
                 if (songData[i].genre.toLowerCase() === input || 
                     songData[i].title.toLowerCase().includes(input)) {
                     
@@ -121,7 +124,7 @@
         ];
 
         function getCollaborativeGenre() {
-           
+            // Using the new unique IDs
             const input = document.getElementById("collabInput").value.toLowerCase().trim();
             const outputDiv = document.getElementById("collab-output");
             const resultArea = document.getElementById("collab-result-area");
