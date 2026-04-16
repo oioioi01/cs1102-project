@@ -5,15 +5,73 @@
     <title>CS1102 Project</title>
     <link rel="stylesheet" href="style.css">
         <style>
-    
+
         body {
             margin: 0;
+            padding: 0;
             background-color: #ffffff; 
-           
             background-image: radial-gradient(#e5e7eb 1.5px, transparent 1.5px);
             background-size: 24px 24px;
             background-attachment: fixed;
+            font-family: 'Segoe UI', system-ui, sans-serif;
         }
+
+.hero-section {
+    background: linear-gradient(90deg, 
+        #000028, 
+        #3b426e, 
+        #00d2ff, 
+        #3b426e, 
+        #000028
+    );
+    
+    background-size: 200% 100%;
+    animation: heroFlow 10s linear infinite;
+
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+@keyframes heroFlow {
+    from { background-position: 0% 0%; }
+    to { background-position: -200% 0%; } 
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin: 0;
+    background-color: #ffffff;
+    font-weight: 800;
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.team-section, .references {
+background: transparent;
+max-width: 1000px;
+margin: 20px auto;
+padding: 20px 40px;
+
+}
+
+h2 { color: #000028; border-bottom: 1px solid #e5e7eb; padding-bottom: 10px; }
+
+.member { padding: 5px 0; color: #334155; }
+
+.references ol li { margin-bottom: 12px; color: #334155; }
+
+.references a { color: #4c1d95; text-decoration: none; font-weight: 500; }
+
     </style>
 </head>
 <body>
@@ -68,7 +126,7 @@
   <h2><a href="https://github.com/oioioi01/cs1102-project/tree/main ">View Github</a></h2>
   </section>
     
-<section class="content-mechanisms"> 
+  <section class="content-mechanisms"> 
     <article>
       <h2>What is Recommender System?</h2>
       <p>
